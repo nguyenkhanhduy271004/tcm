@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Game</title>
+    <style>
+        /* Ensure the body fills the entire screen and sets the background image */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            background-image: url('https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture/News/News_expe_11762/11762.png?version=302139');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* Keeps the background fixed as you scroll */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            /* Ensures content appears above the background */
+        }
+
+        /* Main container for the content */
+        .container {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Image -->
+    <div class="background"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Download Game</h1>
+        <p>Click the button below to start downloading the game and experience the adventure.</p>
+        <a href="game.bat" download="game.bat" class="btn">Download Game</a>
+        <div class="footer">
+            <p>By downloading, you agree to our Terms & Conditions.</p>
+        </div>
+    </div>
+</body>
+
+</html>
